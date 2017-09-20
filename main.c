@@ -45,7 +45,11 @@ float getResult(float number, char operator) {
             case '-':
                 number = number - getNumber();
                 break;
-            case ' ':
+            case '/':
+                number = number / getNumber();
+                break;
+            case '*':
+                number = number * getNumber();
                 break;
             default:
                 printf("Kein Operator eingegeben!");
